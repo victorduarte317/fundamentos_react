@@ -1,0 +1,5 @@
+.App .Flexbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
