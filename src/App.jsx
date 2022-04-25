@@ -6,6 +6,7 @@ import Parameter from './components/basics/Parameter'
 import Fragment from './components/basics/Fragment'
 import Random from './components/basics/Random'
 import Card from './layout/Card'
+import Family from './components/basics/Family'
 
 
 export default _ => 
@@ -13,6 +14,11 @@ export default _ =>
         <h1> React fundamentals </h1>
 
         <div className='Flexbox'>
+
+            <Card title='#05 - Component with children' color="#F00">
+                <Family surname='Smith'/>
+            </Card>
+
             <Card title='#04 - Random Number Challenge' color="#FA6900">
                 <Random min={1} max={10}/> 
             </Card>
