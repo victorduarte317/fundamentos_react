@@ -12,6 +12,7 @@ import StudentsList from './components/basics/repetition/StudentsList'
 import ProductsTable from './components/basics/repetition/ProductsTable'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import UserInfo from './components/conditional/UserInfo'
+import DirectParent from './components/communication/DirectParent'
 
 
 export default () => 
@@ -19,6 +20,10 @@ export default () =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#09 - Direct Communication' color='#eab676' id='table'>
+                <DirectParent></DirectParent>
+            </Card>
 
             <Card title='#08 - Conditional Rendering' color='#1c1d32' id='table'>
                 <EvenOrOdd number={19}></EvenOrOdd>
