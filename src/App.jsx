@@ -14,7 +14,7 @@ import EvenOrOdd from './components/conditional/EvenOrOdd'
 import UserInfo from './components/conditional/UserInfo'
 
 
-export default _ => 
+export default () => 
     <div className='App'>
         <h1> React fundamentals </h1>
 
@@ -22,8 +22,7 @@ export default _ =>
 
             <Card title='#08 - Conditional Rendering' color='#1c1d32' id='table'>
                 <EvenOrOdd number={19}></EvenOrOdd>
-                <UserInfo user={{ name: 'André Luiz Teixeira' }}/>
-                <UserInfo user={{}} />
+                <UserInfo user={{ name: 'André Luiz Teixeira' }}/>  
             </Card>
 
             <Card title='#07 - Products Table Challenge' color='#241446' id='table'>
