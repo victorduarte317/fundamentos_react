@@ -9,6 +9,7 @@ import Card from './layout/Card'
 import Family from './components/basics/Family'
 import FamilyMember from './components/basics/FamilyMember'
 import StudentsList from './components/basics/repetition/StudentsList'
+import ProductsTable from './components/basics/repetition/ProductsTable'
 
 
 export default _ => 
@@ -16,6 +17,10 @@ export default _ =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#07 - Products Table' color='#241446' id='table'>
+                <ProductsTable></ProductsTable>
+            </Card>
 
             <Card title='#06 - Repetition' color="purple">
                 <StudentsList></StudentsList>

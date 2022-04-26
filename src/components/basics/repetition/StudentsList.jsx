@@ -2,6 +2,7 @@ import React from 'react'
 import students from '../../../data/students'
 
 export default props => {
+    // data to display
     const studentsList = students.map((student)=>{
         return (
             <li key={student.id}>
@@ -9,6 +10,7 @@ export default props => {
             </li>
         )
     })
+    // screen display
     return(
         <div>
             <ul style={ {listStyle: 'none'} }>
