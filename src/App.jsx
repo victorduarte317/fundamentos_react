@@ -13,6 +13,7 @@ import ProductsTable from './components/basics/repetition/ProductsTable'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import UserInfo from './components/conditional/UserInfo'
 import DirectParent from './components/communication/DirectParent'
+import IndirectParent from './components/communication/IndirectParent'
 
 
 export default () => 
@@ -20,6 +21,10 @@ export default () =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#10 - Indirect Communication' color='#76aaea' id='table'>
+                <IndirectParent></IndirectParent>
+            </Card>
 
             <Card title='#09 - Direct Communication' color='#eab676' id='table'>
                 <DirectParent></DirectParent>
