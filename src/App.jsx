@@ -8,6 +8,7 @@ import Random from './components/basics/Random'
 import Card from './layout/Card'
 import Family from './components/basics/Family'
 import FamilyMember from './components/basics/FamilyMember'
+import StudentsList from './components/basics/repetition/StudentsList'
 
 
 export default _ => 
@@ -15,6 +16,10 @@ export default _ =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#06 - Repetition' color="purple">
+                <StudentsList></StudentsList>
+            </Card>
 
             <Card title='#05 - Component with children' color="#F00">
                 <Family surname='Firebase'>
