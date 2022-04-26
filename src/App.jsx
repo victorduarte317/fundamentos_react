@@ -11,6 +11,7 @@ import FamilyMember from './components/basics/FamilyMember'
 import StudentsList from './components/basics/repetition/StudentsList'
 import ProductsTable from './components/basics/repetition/ProductsTable'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
+import UserInfo from './components/conditional/UserInfo'
 
 
 export default _ => 
@@ -21,6 +22,8 @@ export default _ =>
 
             <Card title='#08 - Conditional Rendering' color='#1c1d32' id='table'>
                 <EvenOrOdd number={19}></EvenOrOdd>
+                <UserInfo user={{ name: 'André Luiz Teixeira' }}/>
+                <UserInfo user={{}} />
             </Card>
 
             <Card title='#07 - Products Table Challenge' color='#241446' id='table'>
