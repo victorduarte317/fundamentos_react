@@ -1,13 +1,15 @@
 import "./Counter.css";
 import React, { Component } from 'react'
 
+import Display from "./Display";
+import Buttons from "./Buttons";
+import AmountForm from "./AmountForm";
+
 class Counter extends Component {
     // Defining components state
     state = {
         number: this.props.initNumber || 0,
-        amount: this.props.amount || 5,
-
-
+        amount: this.props.amount || 1,
     }
 
     inc = () => { // needs to be an arrow function to fix scope problems around "this" arg
@@ -22,9 +24,9 @@ class Counter extends Component {
         });
     }
 
-    setAmount = (e) => {
+    setAmount = (newAmount) => {
         this.setState({
-            amount: +e.target.value // "+" converts the value from string to int
+            amount: newAmount // "+" converts the value from string to int
         })
     }
     
@@ -32,15 +34,9 @@ class Counter extends Component {
         return(
             <div className="Counter">
                 <h2> Counter </h2>
-                <h3>{this.state.number}</h3>
-                <div>
-                    <label htmlFor="amountInput">Increment/Decrement by: </label>
-                    <input id="amountInput" type="number"
-                           value={this.state.amount} 
-                           onChange={this.setAmount} />
-                </div>
-                <button onClick={this.inc}>+</button>
-                <button onClick={this.dec}>-</button>
+                <Display number={this.state.number} />
+                <AmountForm amount={this.state.amount} setAmount={this.setAmount} />
+                <Buttons setInc={this.inc} setDec={this.dec} />
             </div>
         );
     }

@@ -25,7 +25,7 @@ export default () =>
         <div className='Cards'>
 
             <Card title='#12 - Counter' color='#FFBF00' id='table'>
-                <Counter initNumber={10}></Counter>
+                <Counter initNumber={0}></Counter>
             </Card>
 
 
