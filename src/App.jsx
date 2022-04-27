@@ -14,6 +14,7 @@ import EvenOrOdd from './components/conditional/EvenOrOdd'
 import UserInfo from './components/conditional/UserInfo'
 import DirectParent from './components/communication/DirectParent'
 import IndirectParent from './components/communication/IndirectParent'
+import Input from './components/form/Input'
 
 
 export default () => 
@@ -21,6 +22,10 @@ export default () =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#11 - Controlled Component (Input)' color='#DFFF00' id='table'>
+                <Input></Input>
+            </Card>
 
             <Card title='#10 - Indirect Communication' color='#76aaea' id='table'>
                 <IndirectParent></IndirectParent>
