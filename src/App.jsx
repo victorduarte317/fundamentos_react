@@ -16,6 +16,7 @@ import DirectParent from './components/communication/DirectParent'
 import IndirectParent from './components/communication/IndirectParent'
 import Input from './components/form/Input'
 import Counter from './components/counter/Counter'
+import Lottery from './components/Lottery/Lottery'
 
 
 export default () => 
@@ -23,6 +24,10 @@ export default () =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#13 - Lottery Challenge' color='#FFBF00' id='table'>
+                <Lottery></Lottery>
+            </Card>
 
             <Card title='#12 - Counter' color='#FFBF00' id='table'>
                 <Counter initNumber={0}></Counter>
