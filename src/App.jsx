@@ -15,6 +15,7 @@ import UserInfo from './components/conditional/UserInfo'
 import DirectParent from './components/communication/DirectParent'
 import IndirectParent from './components/communication/IndirectParent'
 import Input from './components/form/Input'
+import Counter from './components/counter/Counter'
 
 
 export default () => 
@@ -22,6 +23,11 @@ export default () =>
         <h1> React fundamentals </h1>
 
         <div className='Cards'>
+
+            <Card title='#12 - Counter' color='#FFBF00' id='table'>
+                <Counter initNumber={10}></Counter>
+            </Card>
+
 
             <Card title='#11 - Controlled Component (Input)' color='#DFFF00' id='table'>
                 <Input></Input>
