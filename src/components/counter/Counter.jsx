@@ -26,7 +26,7 @@ class Counter extends Component {
 
     setAmount = (newAmount) => {
         this.setState({
-            amount: newAmount // "+" converts the value from string to int
+            amount: newAmount 
         })
     }
     

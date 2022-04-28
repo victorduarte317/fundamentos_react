@@ -16,7 +16,7 @@ import DirectParent from './components/communication/DirectParent'
 import IndirectParent from './components/communication/IndirectParent'
 import Input from './components/form/Input'
 import Counter from './components/counter/Counter'
-import Lottery from './components/Lottery/Lottery'
+import Lottery from './components/lottery/Lottery'
 
 
 export default () => 
@@ -25,7 +25,7 @@ export default () =>
 
         <div className='Cards'>
 
-            <Card title='#13 - Lottery Challenge' color='#FFBF00' id='table'>
+            <Card title='#13 - Lottery Challenge' color='#32a842' id='table'>
                 <Lottery></Lottery>
             </Card>
 
