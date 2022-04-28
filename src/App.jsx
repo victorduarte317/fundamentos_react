@@ -26,7 +26,7 @@ export default () =>
         <div className='Cards'>
 
             <Card title='#13 - Lottery Challenge' color='#32a842' id='table'>
-                <Lottery></Lottery>
+                <Lottery amount={6}></Lottery>
             </Card>
 
             <Card title='#12 - Counter' color='#FFBF00' id='table'>
