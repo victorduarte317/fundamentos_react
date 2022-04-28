@@ -1,6 +1,6 @@
 import './_css/Lottery.css'
 import React, {useState} from 'react'
-
+// 
 export default props => {
     
     function generateNewNumber(min, max, array) {
